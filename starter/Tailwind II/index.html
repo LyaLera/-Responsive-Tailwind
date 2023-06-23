@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              greenish: "#0e7490",
+            },
+            fontFamily: {
+              serif: ["Merriweather", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="text-gray-500 font-serif">
+    <div class="flex body-display h-full">
+
+      <div class="w-mobile-nav w-1/4">
+        <nav class="divide-y">
+          <div>
+            <h1 class="font-semibold text-clifford pl-4 pb-3 pt-1 uppercase">
+              <a href="/">Foods</a>
+            </h1>
+          </div>
+          <ul class="pl-3 pt-2">
+            <li class="font-bold text-gray-700">
+              <a href="#">
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>About</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <main id="main-height" class="w-h-main w-3/4 bg-gray-200 grid grid-row-4 h-full"> 
+        <div
+          class="font-semibold text-clifford text-sm uppercase justify-self-end pr-16 pt-6 log-sign"
+        >
+          <a class="mr-5" href="#">Log in</a>
+          <a href="#">Sign up</a>
+        </div>
+
+        <header class="bg-gray-200 ml-12">
+          <div class="flex">
+            <div class="bg-red-600 w-6 h-4 self-end"></div>
+            <div class="bg-sky-600 w-6 h-8 self-end"></div>
+            <div class="bg-green-500 w-6 h-12 self-end"></div>
+          </div>
+          <h2 class="font-bold text-6xl text-gray-700">Recipes</h2>
+          <h3 class="text-lg font-bold">For us</h3>
+        </header>
+
+        <div class="ml-12 grid drid-row-3 gap-6">
+          <h4 class="font-bold">Latest Recipes</h4>
+
+          <div class="cards grid grid-cols-3 mr-12 gap-5">
+            <div class="grid grid-row-2 bg-white rounded-lg shadow-md">
+          
+                <div class="relative"> 
+                    <div class=" absolute rounded-full text-xs text-center bg-red-100 w-12 px-1 py-2 m-2">
+                    25MIN
+                    </div>  
+                    <img class="w-img h-52 object-cover rounded-t-lg" src="img/stew.jpeg" alt="">
+                </div>
+
+              <div class="pl-4">
+                <span class="block font-bold">5 Bean Chili Stew</span>
+                <span>Recipe by Me</span>
+              </div>
+            </div>
+
+            <div class="grid grid-row-2 bg-white rounded-lg shadow-md">
+                
+                <div class="relative"> 
+                    <div class=" absolute rounded-full text-xs text-center bg-red-100 w-12 px-1 py-2 m-2">
+                    25MIN
+                    </div>  
+                    <img class="w-img h-52 object-cover rounded-t-lg" src="img/curry.jpeg" alt="">
+                </div>
+
+              <div class="pl-4">
+                <span class="block font-bold">Curry Chicken</span>
+                <span>Recipe by Me</span>
+              </div>
+            </div>
+
+            <div class="grid grid-row-2 bg-white rounded-lg shadow-md">
+                <div class="relative"> 
+                    <div class=" absolute rounded-full text-xs text-center bg-red-100 w-12 px-1 py-2 m-2">
+                    25MIN
+                    </div>  
+                    <img class=" w-img h-52 object-cover rounded-t-lg" src="img/noodles.jpeg" alt="">
+                </div>
+
+              <div class="p-3">
+                <span class="block font-bold">Noodle Soup</span>
+                <span>Recipe by Me</span>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="font-bold mt-4">Most Popular</h4>
+        </div>
+
+        <div class="justify-self-center">
+          <div
+            class="uppercase font-bold text-xs bg-blue-200 mt-8 py-2 px-3 rounded-full"
+          >
+            Load more
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

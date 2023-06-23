@@ -1,0 +1,45 @@
+@media screen and (max-width: 500px) {
+    .body-display {
+        display: block;
+    }
+
+    .w-mobile-nav {
+        width: 100%; 
+    }
+
+    .devide-y {
+        display: inline;
+    }
+
+    .w-h-main {   
+        width: 100%;
+    }
+
+    .log-sign { 
+        padding-right: 2rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+ 
+    .w-img {
+        width: 100%;    
+    }  
+} 
+
+@media screen and (min-width: 501px) and (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));;
+    }
+
+    .w-img {
+        width: 100%; 
+    }
+}
+
+@media screen and (min-width:901px) { 
+    .w-h-main{
+        height: 100vh;
+    } 
+}
